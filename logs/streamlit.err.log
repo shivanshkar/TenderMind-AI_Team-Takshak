@@ -1,0 +1,2 @@
+C:\Users\Shivansh Karanwal\Documents\Codex\2026-05-04\hi-can-you-write-code-for\frontend\streamlit_app.py:119: FutureWarning: Styler.applymap has been deprecated. Use Styler.map instead.
+  matrix_df.style.applymap(color_decision),

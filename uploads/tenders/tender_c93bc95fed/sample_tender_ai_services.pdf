@@ -1,0 +1,86 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 1605 >>
+stream
+BT
+/F1 9 Tf
+42 800 Td
+12 TL
+(Government of Bharat) Tj
+T*
+(Tender: AI-enabled Citizen Service Analytics Platform) Tj
+T*
+() Tj
+T*
+(Eligibility Criteria) Tj
+T*
+(Mandatory Criteria:) Tj
+T*
+(1. The bidder must have minimum 3 years of experience in AI, data analytics, or software implementation.) Tj
+T*
+(2. The bidder must have average annual turnover of INR 50 lakh during the last three financial years.) Tj
+T*
+(3. The bidder must have completed at least 2 similar projects for government, PSU, or large enterprise clients.) Tj
+T*
+(4. The bidder must hold valid GST registration.) Tj
+T*
+(5. ISO 9001 certification is required for quality management.) Tj
+T*
+(6. ISO 9001 certificate valid until 2026-12-31.) Tj
+T*
+(7. The bidder must not be blacklisted or debarred by any government department.) Tj
+T*
+(8. The bidder must have positive net worth as per latest audited financial statements.) Tj
+T*
+(9. Bid security valid until 2026-12-31.) Tj
+T*
+(10. Data residency: bidder must host and process tender data within India.) Tj
+T*
+(11. Technical proposal must describe a cloud-native AI analytics platform with API integration, role-based access control, and audit reporting.) Tj
+T*
+() Tj
+T*
+(Optional Criteria:) Tj
+T*
+(12. Optional: local language support in Hindi or regional language is desirable for officer-facing workflows.) Tj
+T*
+() Tj
+T*
+(Submission Requirements:) Tj
+T*
+(A. Company profile may be submitted as typed PDF.) Tj
+T*
+(B. Compliance declarations may be PDF or TXT.) Tj
+T*
+(C. Technical proposal may be DOCX.) Tj
+T*
+(D. Certificates or bid security may be scanned PDFs or photographs.) Tj
+T*
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1968
+%%EOF

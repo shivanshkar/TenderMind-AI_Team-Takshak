@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TenderMind AI Report</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #162033;
+      background: #f7f8fb;
+    }
+    header {
+      padding: 28px 36px;
+      background: #122033;
+      color: white;
+    }
+    main {
+      padding: 28px 36px 44px;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+    h1, h2, h3 {
+      margin: 0 0 12px;
+    }
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+    .summary-card {
+      background: white;
+      border: 1px solid #d9dee8;
+      border-radius: 8px;
+      padding: 16px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      margin-bottom: 28px;
+      border: 1px solid #d9dee8;
+    }
+    th, td {
+      border-bottom: 1px solid #e7ebf1;
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+      font-size: 14px;
+    }
+    th {
+      background: #eef2f7;
+      font-weight: 700;
+    }
+    .pass {
+      background: #ddf7e7;
+      color: #116235;
+      font-weight: 700;
+    }
+    .fail {
+      background: #ffe1df;
+      color: #9d2118;
+      font-weight: 700;
+    }
+    .review {
+      background: #fff2ca;
+      color: #755200;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TenderMind AI Evaluation Report</h1>
+    <p>Evaluation ID: eval_c53adc69f9</p>
+  </header>
+  <main>
+    <section class="summary">
+      <section class='summary-card'><h3>BharatTech Solutions</h3><strong>QUALIFIED</strong><p>Score: 100.0%</p><p>Pass: 12 | Fail: 0 | Review: 0</p></section>
+<section class='summary-card'><h3>CivicAI Labs</h3><strong>QUALIFIED</strong><p>Score: 96.92%</p><p>Pass: 11 | Fail: 1 | Review: 0</p></section>
+<section class='summary-card'><h3>NewWave Analytics</h3><strong>NOT_QUALIFIED</strong><p>Score: 48.46%</p><p>Pass: 5 | Fail: 6 | Review: 1</p></section>
+<section class='summary-card'><h3>RuralLogic Innovations</h3><strong>NOT_QUALIFIED</strong><p>Score: 77.97%</p><p>Pass: 8 | Fail: 1 | Review: 3</p></section>
+    </section>
+
+    <h2>Evaluation Matrix</h2>
+    <table>
+      <thead><tr><th>Bidder</th><th>Minimum years of experience</th><th>Average annual turnover</th><th>Similar project experience</th><th>GST registration</th><th>ISO 9001 certification</th><th>No blacklisting declaration</th><th>Positive net worth</th><th>ISO certificate validity date</th><th>Bid security validity</th><th>India data residency</th><th>Technical solution alignment</th><th>Local language support</th></tr></thead>
+      <tbody><tr><th>BharatTech Solutions</th><td class="pass">PASS</td><td class="pass">PASS</td><td class="pass">PASS</td><td class="pass">PASS</td><td class="pass">PASS</td><td class="pass">PASS</td><td class="pass">PASS</td><td class="pass">PASS</td><td class="pass">PASS</td><td class="pass">PASS</td><td class="pass">PASS</td><td class="pass">PASS</td></tr>
+<tr><th>CivicAI Labs</th><td class="pass">PASS</td><td class="pass">PASS</td><td class="pass">PASS</td><td class="pass">PASS</td><td class="pass">PASS</td><td class="pass">PASS</td><td class="pass">PASS</td><td class="pass">PASS</td><td class="pass">PASS</td><td class="pass">PASS</td><td class="pass">PASS</td><td class="fail">FAIL</td></tr>
+<tr><th>NewWave Analytics</th><td class="fail">FAIL</td><td class="fail">FAIL</td><td class="pass">PASS</td><td class="pass">PASS</td><td class="pass">PASS</td><td class="pass">PASS</td><td class="pass">PASS</td><td class="fail">FAIL</td><td class="review">NEEDS_REVIEW</td><td class="fail">FAIL</td><td class="fail">FAIL</td><td class="fail">FAIL</td></tr>
+<tr><th>RuralLogic Innovations</th><td class="pass">PASS</td><td class="pass">PASS</td><td class="pass">PASS</td><td class="review">NEEDS_REVIEW</td><td class="fail">FAIL</td><td class="pass">PASS</td><td class="pass">PASS</td><td class="review">NEEDS_REVIEW</td><td class="review">NEEDS_REVIEW</td><td class="pass">PASS</td><td class="pass">PASS</td><td class="pass">PASS</td></tr></tbody>
+    </table>
+
+    <h2>Per-Criterion Explanations</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Bidder</th>
+          <th>Criterion</th>
+          <th>Decision</th>
+          <th>Confidence</th>
+          <th>Extracted value</th>
+          <th>Source document</th>
+          <th>Rule applied</th>
+          <th>Reasoning</th>
+        </tr>
+      </thead>
+      <tbody><tr><td>BharatTech Solutions</td><td>Minimum years of experience</td><td class="pass">PASS</td><td>0.970</td><td>6.0</td><td>company_profile.pdf</td><td>years_experience &gt;= 3.0</td><td>Extracted numeric value 6 satisfies rule &gt;= 3.</td></tr>
+<tr><td>BharatTech Solutions</td><td>Average annual turnover</td><td class="pass">PASS</td><td>0.970</td><td>120.0</td><td>company_profile.pdf</td><td>annual_turnover_lakhs &gt;= 50.0</td><td>Extracted numeric value 120 satisfies rule &gt;= 50.</td></tr>
+<tr><td>BharatTech Solutions</td><td>Similar project experience</td><td class="pass">PASS</td><td>0.970</td><td>5</td><td>company_profile.pdf</td><td>similar_projects_count &gt;= 2.0</td><td>Extracted numeric value 5 satisfies rule &gt;= 2.</td></tr>
+<tr><td>BharatTech Solutions</td><td>GST registration</td><td class="pass">PASS</td><td>0.920</td><td>True</td><td>compliance_declaration.txt</td><td>gst_registration is_true True</td><td>Extracted boolean value is True; required value is True.</td></tr>
+<tr><td>BharatTech Solutions</td><td>ISO 9001 certification</td><td class="pass">PASS</td><td>0.920</td><td>True</td><td>compliance_declaration.txt</td><td>iso_9001_certificate is_true True</td><td>Extracted boolean value is True; required value is True.</td></tr>
+<tr><td>BharatTech Solutions</td><td>No blacklisting declaration</td><td class="pass">PASS</td><td>0.920</td><td>False</td><td>compliance_declaration.txt</td><td>blacklisted_status is_false False</td><td>Extracted boolean value is False; required value is False.</td></tr>
+<tr><td>BharatTech Solutions</td><td>Positive net worth</td><td class="pass">PASS</td><td>0.970</td><td>True</td><td>company_profile.pdf</td><td>net_worth_positive is_true True</td><td>Extracted boolean value is True; required value is True.</td></tr>
+<tr><td>BharatTech Solutions</td><td>ISO certificate validity date</td><td class="pass">PASS</td><td>0.920</td><td>2027-03-31</td><td>compliance_declaration.txt</td><td>iso_certificate_valid_until date_on_or_after 2026-12-31</td><td>Extracted date 2027-03-31 satisfies rule against 2026-12-31.</td></tr>
+<tr><td>BharatTech Solutions</td><td>Bid security validity</td><td class="pass">PASS</td><td>0.970</td><td>2027-01-31</td><td>bid_security.pdf</td><td>bid_security_valid_until date_on_or_after 2026-12-31</td><td>Extracted date 2027-01-31 satisfies rule against 2026-12-31.</td></tr>
+<tr><td>BharatTech Solutions</td><td>India data residency</td><td class="pass">PASS</td><td>0.920</td><td>True</td><td>compliance_declaration.txt</td><td>data_residency_india is_true True</td><td>Extracted boolean value is True; required value is True.</td></tr>
+<tr><td>BharatTech Solutions</td><td>Technical solution alignment</td><td class="pass">PASS</td><td>0.900</td><td>BharatTech proposes a cloud-native AI analytics platform with API integration, role-based access control, audit reporting, searchable evidence trails, and officer dashboards.</td><td>technical_proposal.docx</td><td>semantic similarity &gt;= 0.85 pass, 0.72-0.85 review, &lt;0.72 fail</td><td>Semantic score is 0.900. Evidence matches the criterion.</td></tr>
+<tr><td>BharatTech Solutions</td><td>Local language support</td><td class="pass">PASS</td><td>0.920</td><td>True</td><td>compliance_declaration.txt</td><td>local_language_support is_true True</td><td>Extracted boolean value is True; required value is True.</td></tr>
+<tr><td>CivicAI Labs</td><td>Minimum years of experience</td><td class="pass">PASS</td><td>0.970</td><td>4.0</td><td>company_profile.pdf</td><td>years_experience &gt;= 3.0</td><td>Extracted numeric value 4 satisfies rule &gt;= 3.</td></tr>
+<tr><td>CivicAI Labs</td><td>Average annual turnover</td><td class="pass">PASS</td><td>0.970</td><td>70.0</td><td>company_profile.pdf</td><td>annual_turnover_lakhs &gt;= 50.0</td><td>Extracted numeric value 70 satisfies rule &gt;= 50.</td></tr>
+<tr><td>CivicAI Labs</td><td>Similar project experience</td><td class="pass">PASS</td><td>0.970</td><td>2</td><td>company_profile.pdf</td><td>similar_projects_count &gt;= 2.0</td><td>Extracted numeric value 2 satisfies rule &gt;= 2.</td></tr>
+<tr><td>CivicAI Labs</td><td>GST registration</td><td class="pass">PASS</td><td>0.970</td><td>True</td><td>company_profile.pdf</td><td>gst_registration is_true True</td><td>Extracted boolean value is True; required value is True.</td></tr>
+<tr><td>CivicAI Labs</td><td>ISO 9001 certification</td><td class="pass">PASS</td><td>0.920</td><td>True</td><td>compliance_declaration.txt</td><td>iso_9001_certificate is_true True</td><td>Extracted boolean value is True; required value is True.</td></tr>
+<tr><td>CivicAI Labs</td><td>No blacklisting declaration</td><td class="pass">PASS</td><td>0.920</td><td>False</td><td>compliance_declaration.txt</td><td>blacklisted_status is_false False</td><td>Extracted boolean value is False; required value is False.</td></tr>
+<tr><td>CivicAI Labs</td><td>Positive net worth</td><td class="pass">PASS</td><td>0.970</td><td>True</td><td>company_profile.pdf</td><td>net_worth_positive is_true True</td><td>Extracted boolean value is True; required value is True.</td></tr>
+<tr><td>CivicAI Labs</td><td>ISO certificate validity date</td><td class="pass">PASS</td><td>0.920</td><td>2027-08-20</td><td>compliance_declaration.txt</td><td>iso_certificate_valid_until date_on_or_after 2026-12-31</td><td>Extracted date 2027-08-20 satisfies rule against 2026-12-31.</td></tr>
+<tr><td>CivicAI Labs</td><td>Bid security validity</td><td class="pass">PASS</td><td>0.920</td><td>2027-01-05</td><td>compliance_declaration.txt</td><td>bid_security_valid_until date_on_or_after 2026-12-31</td><td>Extracted date 2027-01-05 satisfies rule against 2026-12-31.</td></tr>
+<tr><td>CivicAI Labs</td><td>India data residency</td><td class="pass">PASS</td><td>0.920</td><td>True</td><td>compliance_declaration.txt</td><td>data_residency_india is_true True</td><td>Extracted boolean value is True; required value is True.</td></tr>
+<tr><td>CivicAI Labs</td><td>Technical solution alignment</td><td class="pass">PASS</td><td>0.900</td><td>CivicAI Labs will deliver a cloud-native AI analytics platform with API integration, role-based access control, audit reporting, and exportable evaluation reports.</td><td>technical_proposal.docx</td><td>semantic similarity &gt;= 0.85 pass, 0.72-0.85 review, &lt;0.72 fail</td><td>Semantic score is 0.900. Evidence matches the criterion.</td></tr>
+<tr><td>CivicAI Labs</td><td>Local language support</td><td class="fail">FAIL</td><td>0.920</td><td>False</td><td>compliance_declaration.txt</td><td>local_language_support is_true True</td><td>Extracted boolean value is False; required value is True.</td></tr>
+<tr><td>NewWave Analytics</td><td>Minimum years of experience</td><td class="fail">FAIL</td><td>0.970</td><td>2.0</td><td>company_profile.pdf</td><td>years_experience &gt;= 3.0</td><td>Extracted numeric value 2 does not satisfy rule &gt;= 3.</td></tr>
+<tr><td>NewWave Analytics</td><td>Average annual turnover</td><td class="fail">FAIL</td><td>0.970</td><td>45.0</td><td>company_profile.pdf</td><td>annual_turnover_lakhs &gt;= 50.0</td><td>Extracted numeric value 45 does not satisfy rule &gt;= 50.</td></tr>
+<tr><td>NewWave Analytics</td><td>Similar project experience</td><td class="pass">PASS</td><td>0.970</td><td>3</td><td>company_profile.pdf</td><td>similar_projects_count &gt;= 2.0</td><td>Extracted numeric value 3 satisfies rule &gt;= 2.</td></tr>
+<tr><td>NewWave Analytics</td><td>GST registration</td><td class="pass">PASS</td><td>0.970</td><td>True</td><td>compliance_declaration.pdf</td><td>gst_registration is_true True</td><td>Extracted boolean value is True; required value is True.</td></tr>
+<tr><td>NewWave Analytics</td><td>ISO 9001 certification</td><td class="pass">PASS</td><td>0.970</td><td>True</td><td>compliance_declaration.pdf</td><td>iso_9001_certificate is_true True</td><td>Extracted boolean value is True; required value is True.</td></tr>
+<tr><td>NewWave Analytics</td><td>No blacklisting declaration</td><td class="pass">PASS</td><td>0.970</td><td>False</td><td>compliance_declaration.pdf</td><td>blacklisted_status is_false False</td><td>Extracted boolean value is False; required value is False.</td></tr>
+<tr><td>NewWave Analytics</td><td>Positive net worth</td><td class="pass">PASS</td><td>0.970</td><td>True</td><td>company_profile.pdf</td><td>net_worth_positive is_true True</td><td>Extracted boolean value is True; required value is True.</td></tr>
+<tr><td>NewWave Analytics</td><td>ISO certificate validity date</td><td class="fail">FAIL</td><td>0.970</td><td>2026-06-30</td><td>compliance_declaration.pdf</td><td>iso_certificate_valid_until date_on_or_after 2026-12-31</td><td>Extracted date 2026-06-30 does not satisfy rule against 2026-12-31.</td></tr>
+<tr><td>NewWave Analytics</td><td>Bid security validity</td><td class="review">NEEDS_REVIEW</td><td>0.290</td><td>2027-02-15</td><td>bid_security.pdf</td><td>bid_security_valid_until date_on_or_after 2026-12-31</td><td>Extracted date 2027-02-15 satisfies rule against 2026-12-31. Ambiguity is flagged for human validation.</td></tr>
+<tr><td>NewWave Analytics</td><td>India data residency</td><td class="fail">FAIL</td><td>0.970</td><td>False</td><td>compliance_declaration.pdf</td><td>data_residency_india is_true True</td><td>Extracted boolean value is False; required value is True.</td></tr>
+<tr><td>NewWave Analytics</td><td>Technical solution alignment</td><td class="fail">FAIL</td><td>0.603</td><td>NewWave offers dashboards, model monitoring, API integration, role-based access control, and audit reporting for analytics users.</td><td>technical_proposal.docx</td><td>semantic similarity &gt;= 0.85 pass, 0.72-0.85 review, &lt;0.72 fail</td><td>Semantic score is 0.603. Evidence does not conclusively match the criterion.</td></tr>
+<tr><td>NewWave Analytics</td><td>Local language support</td><td class="fail">FAIL</td><td>0.970</td><td>False</td><td>compliance_declaration.pdf</td><td>local_language_support is_true True</td><td>Extracted boolean value is False; required value is True.</td></tr>
+<tr><td>RuralLogic Innovations</td><td>Minimum years of experience</td><td class="pass">PASS</td><td>0.970</td><td>3.0</td><td>company_profile.pdf</td><td>years_experience &gt;= 3.0</td><td>Extracted numeric value 3 satisfies rule &gt;= 3.</td></tr>
+<tr><td>RuralLogic Innovations</td><td>Average annual turnover</td><td class="pass">PASS</td><td>0.970</td><td>52.0</td><td>company_profile.pdf</td><td>annual_turnover_lakhs &gt;= 50.0</td><td>Extracted numeric value 52 satisfies rule &gt;= 50.</td></tr>
+<tr><td>RuralLogic Innovations</td><td>Similar project experience</td><td class="pass">PASS</td><td>0.970</td><td>2</td><td>company_profile.pdf</td><td>similar_projects_count &gt;= 2.0</td><td>Extracted numeric value 2 satisfies rule &gt;= 2.</td></tr>
+<tr><td>RuralLogic Innovations</td><td>GST registration</td><td class="review">NEEDS_REVIEW</td><td>0.000</td><td>None</td><td>Not found</td><td>gst_registration is_true True</td><td>No reliable extracted evidence was found. Human review is required before rejection. Ambiguity is flagged for human validation.</td></tr>
+<tr><td>RuralLogic Innovations</td><td>ISO 9001 certification</td><td class="fail">FAIL</td><td>0.970</td><td>False</td><td>declaration.pdf</td><td>iso_9001_certificate is_true True</td><td>Extracted boolean value is False; required value is True.</td></tr>
+<tr><td>RuralLogic Innovations</td><td>No blacklisting declaration</td><td class="pass">PASS</td><td>0.970</td><td>False</td><td>declaration.pdf</td><td>blacklisted_status is_false False</td><td>Extracted boolean value is False; required value is False.</td></tr>
+<tr><td>RuralLogic Innovations</td><td>Positive net worth</td><td class="pass">PASS</td><td>0.970</td><td>True</td><td>company_profile.pdf</td><td>net_worth_positive is_true True</td><td>Extracted boolean value is True; required value is True.</td></tr>
+<tr><td>RuralLogic Innovations</td><td>ISO certificate validity date</td><td class="review">NEEDS_REVIEW</td><td>0.000</td><td>None</td><td>Not found</td><td>iso_certificate_valid_until date_on_or_after 2026-12-31</td><td>No reliable extracted evidence was found. Human review is required before rejection. Ambiguity is flagged for human validation.</td></tr>
+<tr><td>RuralLogic Innovations</td><td>Bid security validity</td><td class="review">NEEDS_REVIEW</td><td>0.000</td><td>None</td><td>Not found</td><td>bid_security_valid_until date_on_or_after 2026-12-31</td><td>No reliable extracted evidence was found. Human review is required before rejection. Ambiguity is flagged for human validation.</td></tr>
+<tr><td>RuralLogic Innovations</td><td>India data residency</td><td class="pass">PASS</td><td>0.970</td><td>True</td><td>declaration.pdf</td><td>data_residency_india is_true True</td><td>Extracted boolean value is True; required value is True.</td></tr>
+<tr><td>RuralLogic Innovations</td><td>Technical solution alignment</td><td class="pass">PASS</td><td>0.900</td><td>RuralLogic proposes a cloud-native AI analytics platform with API integration, role-based access control, and audit reporting for procurement officers.</td><td>technical_proposal.docx</td><td>semantic similarity &gt;= 0.85 pass, 0.72-0.85 review, &lt;0.72 fail</td><td>Semantic score is 0.900. Evidence matches the criterion.</td></tr>
+<tr><td>RuralLogic Innovations</td><td>Local language support</td><td class="pass">PASS</td><td>0.970</td><td>True</td><td>declaration.pdf</td><td>local_language_support is_true True</td><td>Extracted boolean value is True; required value is True.</td></tr></tbody>
+    </table>
+  </main>
+</body>
+</html>

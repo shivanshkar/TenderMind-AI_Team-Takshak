@@ -1,0 +1,687 @@
+{
+  "evaluation_id": "eval_25a6ef3f24",
+  "tender_id": "tender_811b36e19e",
+  "bidder_batch_id": "batch_e63d17843e",
+  "criteria": [
+    {
+      "id": "criterion_879a69616c",
+      "name": "Minimum years of experience",
+      "description": "Bidder must have at least 3 years of relevant experience.",
+      "field_name": "years_experience",
+      "data_type": "number",
+      "operator": ">=",
+      "threshold": 3.0,
+      "unit": "years",
+      "mandatory": true,
+      "weight": 1.0,
+      "evidence_keywords": [
+        "experience",
+        "years"
+      ],
+      "source_excerpt": "t tender: ai-enabled citizen service analytics platform eligibility criteria 1. the bidder must have minimum 3 years of experience in ai, data analytics, or software implementation. 2. the bidder must have average annual turnover of inr 50"
+    },
+    {
+      "id": "criterion_d3d8dedf0f",
+      "name": "Average annual turnover",
+      "description": "Bidder must have average annual turnover of at least INR 50 lakh.",
+      "field_name": "annual_turnover_lakhs",
+      "data_type": "number",
+      "operator": ">=",
+      "threshold": 50.0,
+      "unit": "INR lakh",
+      "mandatory": true,
+      "weight": 1.0,
+      "evidence_keywords": [
+        "turnover",
+        "annual turnover"
+      ],
+      "source_excerpt": "minimum 3 years of experience in ai, data analytics, or software implementation. 2. the bidder must have average annual turnover of inr 50 lakh during the last three financial years. 3. the bidder must have completed at least 2 similar proj"
+    },
+    {
+      "id": "criterion_42c78c3974",
+      "name": "Similar project experience",
+      "description": "Bidder must have completed at least 2 similar projects.",
+      "field_name": "similar_projects_count",
+      "data_type": "number",
+      "operator": ">=",
+      "threshold": 2.0,
+      "unit": "projects",
+      "mandatory": true,
+      "weight": 1.0,
+      "evidence_keywords": [
+        "similar projects",
+        "completed projects"
+      ],
+      "source_excerpt": "rage annual turnover of inr 50 lakh during the last three financial years. 3. the bidder must have completed at least 2 similar projects for government, psu, or large enterprise clients. 4. the bidder must hold valid gst registration. 5. is"
+    },
+    {
+      "id": "criterion_2cfc9cf941",
+      "name": "GST registration",
+      "description": "Bidder must hold a valid GST registration.",
+      "field_name": "gst_registration",
+      "data_type": "boolean",
+      "operator": "is_true",
+      "threshold": true,
+      "unit": null,
+      "mandatory": true,
+      "weight": 1.0,
+      "evidence_keywords": [
+        "gst",
+        "gstin",
+        "registration"
+      ],
+      "source_excerpt": "e completed at least 2 similar projects for government, psu, or large enterprise clients. 4. the bidder must hold valid gst registration. 5. iso 9001 certification is required for quality management. 6. the bidder must not be blacklisted or"
+    },
+    {
+      "id": "criterion_98bc44de0c",
+      "name": "ISO 9001 certification",
+      "description": "Bidder should provide a valid ISO 9001 quality certification.",
+      "field_name": "iso_9001_certificate",
+      "data_type": "boolean",
+      "operator": "is_true",
+      "threshold": true,
+      "unit": null,
+      "mandatory": true,
+      "weight": 1.0,
+      "evidence_keywords": [
+        "iso 9001",
+        "quality certification"
+      ],
+      "source_excerpt": "2 similar projects for government, psu, or large enterprise clients. 4. the bidder must hold valid gst registration. 5. iso 9001 certification is required for quality management. 6. the bidder must not be blacklisted or debarred by any gove"
+    },
+    {
+      "id": "criterion_faaf11c139",
+      "name": "No blacklisting declaration",
+      "description": "Bidder must not be currently blacklisted by any government department.",
+      "field_name": "blacklisted_status",
+      "data_type": "boolean",
+      "operator": "is_false",
+      "threshold": false,
+      "unit": null,
+      "mandatory": true,
+      "weight": 1.0,
+      "evidence_keywords": [
+        "blacklisted",
+        "debarred"
+      ],
+      "source_excerpt": "st hold valid gst registration. 5. iso 9001 certification is required for quality management. 6. the bidder must not be blacklisted or debarred by any government department. 7. the bidder must have positive net worth as per latest audited f"
+    },
+    {
+      "id": "criterion_a365b23a37",
+      "name": "Positive net worth",
+      "description": "Bidder must have positive net worth as per the latest audited financials.",
+      "field_name": "net_worth_positive",
+      "data_type": "boolean",
+      "operator": "is_true",
+      "threshold": true,
+      "unit": null,
+      "mandatory": true,
+      "weight": 1.0,
+      "evidence_keywords": [
+        "net worth",
+        "audited financials"
+      ],
+      "source_excerpt": "ement. 6. the bidder must not be blacklisted or debarred by any government department. 7. the bidder must have positive net worth as per latest audited financial statements."
+    }
+  ],
+  "bidders": [
+    {
+      "id": "bidder_bharattech_solutions",
+      "name": "BharatTech Solutions",
+      "documents": [
+        {
+          "file_name": "company_profile.pdf",
+          "parser": "pdfplumber",
+          "text": "BharatTech Solutions Pvt Ltd\nYears of experience: 5 years\nAverage annual turnover: INR 80 lakh\nSimilar projects: 4\nGSTIN: 27ABCDE1234F1Z5\nNet worth: positive",
+          "confidence": 0.93
+        },
+        {
+          "file_name": "compliance_declaration.pdf",
+          "parser": "pdfplumber",
+          "text": "Compliance Declaration\nISO 9001 certification: valid\nBlacklisted: no",
+          "confidence": 0.93
+        }
+      ],
+      "fields": {
+        "years_experience": {
+          "name": "years_experience",
+          "raw_value": "5",
+          "normalized_value": 5.0,
+          "confidence": 0.9700000000000001,
+          "source_document": "company_profile.pdf",
+          "source_excerpt": "BharatTech Solutions Pvt Ltd Years of experience: 5 years Average annual turnover: INR 80 lakh Similar projects: 4 GSTIN: 27ABCDE1234F1Z5 Net worth"
+        },
+        "annual_turnover_lakhs": {
+          "name": "annual_turnover_lakhs",
+          "raw_value": "80 lakh",
+          "normalized_value": 80.0,
+          "confidence": 0.9700000000000001,
+          "source_document": "company_profile.pdf",
+          "source_excerpt": "BharatTech Solutions Pvt Ltd Years of experience: 5 years Average annual turnover: INR 80 lakh Similar projects: 4 GSTIN: 27ABCDE1234F1Z5 Net worth: positive"
+        },
+        "similar_projects_count": {
+          "name": "similar_projects_count",
+          "raw_value": "4",
+          "normalized_value": 4,
+          "confidence": 0.9700000000000001,
+          "source_document": "company_profile.pdf",
+          "source_excerpt": "tTech Solutions Pvt Ltd Years of experience: 5 years Average annual turnover: INR 80 lakh Similar projects: 4 GSTIN: 27ABCDE1234F1Z5 Net worth: positive"
+        },
+        "gst_registration": {
+          "name": "gst_registration",
+          "raw_value": "27ABCDE1234F1Z5",
+          "normalized_value": true,
+          "confidence": 0.9700000000000001,
+          "source_document": "company_profile.pdf",
+          "source_excerpt": "Ltd Years of experience: 5 years Average annual turnover: INR 80 lakh Similar projects: 4 GSTIN: 27ABCDE1234F1Z5 Net worth: positive"
+        },
+        "iso_9001_certificate": {
+          "name": "iso_9001_certificate",
+          "raw_value": "valid",
+          "normalized_value": true,
+          "confidence": 0.9700000000000001,
+          "source_document": "compliance_declaration.pdf",
+          "source_excerpt": "Compliance Declaration ISO 9001 certification: valid Blacklisted: no"
+        },
+        "blacklisted_status": {
+          "name": "blacklisted_status",
+          "raw_value": "no",
+          "normalized_value": false,
+          "confidence": 0.9700000000000001,
+          "source_document": "compliance_declaration.pdf",
+          "source_excerpt": "Compliance Declaration ISO 9001 certification: valid Blacklisted: no"
+        },
+        "net_worth_positive": {
+          "name": "net_worth_positive",
+          "raw_value": "positive",
+          "normalized_value": true,
+          "confidence": 0.9700000000000001,
+          "source_document": "company_profile.pdf",
+          "source_excerpt": ": 5 years Average annual turnover: INR 80 lakh Similar projects: 4 GSTIN: 27ABCDE1234F1Z5 Net worth: positive"
+        }
+      }
+    },
+    {
+      "id": "bidder_newwave_analytics",
+      "name": "NewWave Analytics",
+      "documents": [
+        {
+          "file_name": "company_profile.pdf",
+          "parser": "pdfplumber",
+          "text": "NewWave Analytics LLP\nExperience: 2 years\nAverage annual turnover: INR 45 lakh\nSimilar projects: 3\nGST registration: registered\nNet worth: positive",
+          "confidence": 0.93
+        },
+        {
+          "file_name": "compliance_declaration.pdf",
+          "parser": "pdfplumber",
+          "text": "Compliance Declaration\nISO 9001 certificate: available\nBlacklisted: no",
+          "confidence": 0.93
+        }
+      ],
+      "fields": {
+        "years_experience": {
+          "name": "years_experience",
+          "raw_value": "2",
+          "normalized_value": 2.0,
+          "confidence": 0.9700000000000001,
+          "source_document": "company_profile.pdf",
+          "source_excerpt": "NewWave Analytics LLP Experience: 2 years Average annual turnover: INR 45 lakh Similar projects: 3 GST registration: registered Net"
+        },
+        "annual_turnover_lakhs": {
+          "name": "annual_turnover_lakhs",
+          "raw_value": "45 lakh",
+          "normalized_value": 45.0,
+          "confidence": 0.9700000000000001,
+          "source_document": "company_profile.pdf",
+          "source_excerpt": "NewWave Analytics LLP Experience: 2 years Average annual turnover: INR 45 lakh Similar projects: 3 GST registration: registered Net worth: positive"
+        },
+        "similar_projects_count": {
+          "name": "similar_projects_count",
+          "raw_value": "3",
+          "normalized_value": 3,
+          "confidence": 0.9700000000000001,
+          "source_document": "company_profile.pdf",
+          "source_excerpt": "NewWave Analytics LLP Experience: 2 years Average annual turnover: INR 45 lakh Similar projects: 3 GST registration: registered Net worth: positive"
+        },
+        "gst_registration": {
+          "name": "gst_registration",
+          "raw_value": "registered",
+          "normalized_value": true,
+          "confidence": 0.9700000000000001,
+          "source_document": "company_profile.pdf",
+          "source_excerpt": "nalytics LLP Experience: 2 years Average annual turnover: INR 45 lakh Similar projects: 3 GST registration: registered Net worth: positive"
+        },
+        "iso_9001_certificate": {
+          "name": "iso_9001_certificate",
+          "raw_value": "available",
+          "normalized_value": true,
+          "confidence": 0.9700000000000001,
+          "source_document": "compliance_declaration.pdf",
+          "source_excerpt": "Compliance Declaration ISO 9001 certificate: available Blacklisted: no"
+        },
+        "blacklisted_status": {
+          "name": "blacklisted_status",
+          "raw_value": "no",
+          "normalized_value": false,
+          "confidence": 0.9700000000000001,
+          "source_document": "compliance_declaration.pdf",
+          "source_excerpt": "Compliance Declaration ISO 9001 certificate: available Blacklisted: no"
+        },
+        "net_worth_positive": {
+          "name": "net_worth_positive",
+          "raw_value": "positive",
+          "normalized_value": true,
+          "confidence": 0.9700000000000001,
+          "source_document": "company_profile.pdf",
+          "source_excerpt": "ars Average annual turnover: INR 45 lakh Similar projects: 3 GST registration: registered Net worth: positive"
+        }
+      }
+    },
+    {
+      "id": "bidder_rurallogic_innovations",
+      "name": "RuralLogic Innovations",
+      "documents": [
+        {
+          "file_name": "company_profile.pdf",
+          "parser": "pdfplumber",
+          "text": "RuralLogic Innovations\nExperience: 3 years\nAverage annual turnover: INR 52 lakh\nSimilar projects: 2\nNet worth: positive",
+          "confidence": 0.93
+        },
+        {
+          "file_name": "declaration.pdf",
+          "parser": "pdfplumber",
+          "text": "Self declaration\nBlacklisted: no\nISO 9001 certification: not available\nGST registration evidence is attached as scanned image.",
+          "confidence": 0.93
+        },
+        {
+          "file_name": "gst_certificate.png",
+          "parser": "pytesseract_unavailable",
+          "text": "",
+          "confidence": 0.0
+        }
+      ],
+      "fields": {
+        "years_experience": {
+          "name": "years_experience",
+          "raw_value": "3",
+          "normalized_value": 3.0,
+          "confidence": 0.9700000000000001,
+          "source_document": "company_profile.pdf",
+          "source_excerpt": "RuralLogic Innovations Experience: 3 years Average annual turnover: INR 52 lakh Similar projects: 2 Net worth: positive"
+        },
+        "annual_turnover_lakhs": {
+          "name": "annual_turnover_lakhs",
+          "raw_value": "52 lakh",
+          "normalized_value": 52.0,
+          "confidence": 0.9700000000000001,
+          "source_document": "company_profile.pdf",
+          "source_excerpt": "RuralLogic Innovations Experience: 3 years Average annual turnover: INR 52 lakh Similar projects: 2 Net worth: positive"
+        },
+        "similar_projects_count": {
+          "name": "similar_projects_count",
+          "raw_value": "2",
+          "normalized_value": 2,
+          "confidence": 0.9700000000000001,
+          "source_document": "company_profile.pdf",
+          "source_excerpt": "RuralLogic Innovations Experience: 3 years Average annual turnover: INR 52 lakh Similar projects: 2 Net worth: positive"
+        },
+        "iso_9001_certificate": {
+          "name": "iso_9001_certificate",
+          "raw_value": "no",
+          "normalized_value": false,
+          "confidence": 0.9700000000000001,
+          "source_document": "declaration.pdf",
+          "source_excerpt": "Self declaration Blacklisted: no ISO 9001 certification: not available GST registration evidence is attached as scanned image."
+        },
+        "blacklisted_status": {
+          "name": "blacklisted_status",
+          "raw_value": "no",
+          "normalized_value": false,
+          "confidence": 0.9700000000000001,
+          "source_document": "declaration.pdf",
+          "source_excerpt": "Self declaration Blacklisted: no ISO 9001 certification: not available GST registration evidence is attached as scanned im"
+        },
+        "net_worth_positive": {
+          "name": "net_worth_positive",
+          "raw_value": "positive",
+          "normalized_value": true,
+          "confidence": 0.9700000000000001,
+          "source_document": "company_profile.pdf",
+          "source_excerpt": "Innovations Experience: 3 years Average annual turnover: INR 52 lakh Similar projects: 2 Net worth: positive"
+        }
+      }
+    }
+  ],
+  "evaluations": [
+    {
+      "bidder_id": "bidder_bharattech_solutions",
+      "bidder_name": "BharatTech Solutions",
+      "criterion_id": "criterion_879a69616c",
+      "criterion_name": "Minimum years of experience",
+      "decision": "PASS",
+      "confidence": 0.97,
+      "extracted_value": 5.0,
+      "source_document": "company_profile.pdf",
+      "rule_applied": "years_experience >= 3.0",
+      "reasoning": "Extracted numeric value 5 satisfies rule >= 3.",
+      "flagged": false
+    },
+    {
+      "bidder_id": "bidder_bharattech_solutions",
+      "bidder_name": "BharatTech Solutions",
+      "criterion_id": "criterion_d3d8dedf0f",
+      "criterion_name": "Average annual turnover",
+      "decision": "PASS",
+      "confidence": 0.97,
+      "extracted_value": 80.0,
+      "source_document": "company_profile.pdf",
+      "rule_applied": "annual_turnover_lakhs >= 50.0",
+      "reasoning": "Extracted numeric value 80 satisfies rule >= 50.",
+      "flagged": false
+    },
+    {
+      "bidder_id": "bidder_bharattech_solutions",
+      "bidder_name": "BharatTech Solutions",
+      "criterion_id": "criterion_42c78c3974",
+      "criterion_name": "Similar project experience",
+      "decision": "PASS",
+      "confidence": 0.97,
+      "extracted_value": 4,
+      "source_document": "company_profile.pdf",
+      "rule_applied": "similar_projects_count >= 2.0",
+      "reasoning": "Extracted numeric value 4 satisfies rule >= 2.",
+      "flagged": false
+    },
+    {
+      "bidder_id": "bidder_bharattech_solutions",
+      "bidder_name": "BharatTech Solutions",
+      "criterion_id": "criterion_2cfc9cf941",
+      "criterion_name": "GST registration",
+      "decision": "PASS",
+      "confidence": 0.97,
+      "extracted_value": true,
+      "source_document": "company_profile.pdf",
+      "rule_applied": "gst_registration is_true True",
+      "reasoning": "Extracted boolean value is True; required value is True.",
+      "flagged": false
+    },
+    {
+      "bidder_id": "bidder_bharattech_solutions",
+      "bidder_name": "BharatTech Solutions",
+      "criterion_id": "criterion_98bc44de0c",
+      "criterion_name": "ISO 9001 certification",
+      "decision": "PASS",
+      "confidence": 0.97,
+      "extracted_value": true,
+      "source_document": "compliance_declaration.pdf",
+      "rule_applied": "iso_9001_certificate is_true True",
+      "reasoning": "Extracted boolean value is True; required value is True.",
+      "flagged": false
+    },
+    {
+      "bidder_id": "bidder_bharattech_solutions",
+      "bidder_name": "BharatTech Solutions",
+      "criterion_id": "criterion_faaf11c139",
+      "criterion_name": "No blacklisting declaration",
+      "decision": "PASS",
+      "confidence": 0.97,
+      "extracted_value": false,
+      "source_document": "compliance_declaration.pdf",
+      "rule_applied": "blacklisted_status is_false False",
+      "reasoning": "Extracted boolean value is False; required value is False.",
+      "flagged": false
+    },
+    {
+      "bidder_id": "bidder_bharattech_solutions",
+      "bidder_name": "BharatTech Solutions",
+      "criterion_id": "criterion_a365b23a37",
+      "criterion_name": "Positive net worth",
+      "decision": "PASS",
+      "confidence": 0.97,
+      "extracted_value": true,
+      "source_document": "company_profile.pdf",
+      "rule_applied": "net_worth_positive is_true True",
+      "reasoning": "Extracted boolean value is True; required value is True.",
+      "flagged": false
+    },
+    {
+      "bidder_id": "bidder_newwave_analytics",
+      "bidder_name": "NewWave Analytics",
+      "criterion_id": "criterion_879a69616c",
+      "criterion_name": "Minimum years of experience",
+      "decision": "FAIL",
+      "confidence": 0.97,
+      "extracted_value": 2.0,
+      "source_document": "company_profile.pdf",
+      "rule_applied": "years_experience >= 3.0",
+      "reasoning": "Extracted numeric value 2 does not satisfy rule >= 3.",
+      "flagged": false
+    },
+    {
+      "bidder_id": "bidder_newwave_analytics",
+      "bidder_name": "NewWave Analytics",
+      "criterion_id": "criterion_d3d8dedf0f",
+      "criterion_name": "Average annual turnover",
+      "decision": "FAIL",
+      "confidence": 0.97,
+      "extracted_value": 45.0,
+      "source_document": "company_profile.pdf",
+      "rule_applied": "annual_turnover_lakhs >= 50.0",
+      "reasoning": "Extracted numeric value 45 does not satisfy rule >= 50.",
+      "flagged": false
+    },
+    {
+      "bidder_id": "bidder_newwave_analytics",
+      "bidder_name": "NewWave Analytics",
+      "criterion_id": "criterion_42c78c3974",
+      "criterion_name": "Similar project experience",
+      "decision": "PASS",
+      "confidence": 0.97,
+      "extracted_value": 3,
+      "source_document": "company_profile.pdf",
+      "rule_applied": "similar_projects_count >= 2.0",
+      "reasoning": "Extracted numeric value 3 satisfies rule >= 2.",
+      "flagged": false
+    },
+    {
+      "bidder_id": "bidder_newwave_analytics",
+      "bidder_name": "NewWave Analytics",
+      "criterion_id": "criterion_2cfc9cf941",
+      "criterion_name": "GST registration",
+      "decision": "PASS",
+      "confidence": 0.97,
+      "extracted_value": true,
+      "source_document": "company_profile.pdf",
+      "rule_applied": "gst_registration is_true True",
+      "reasoning": "Extracted boolean value is True; required value is True.",
+      "flagged": false
+    },
+    {
+      "bidder_id": "bidder_newwave_analytics",
+      "bidder_name": "NewWave Analytics",
+      "criterion_id": "criterion_98bc44de0c",
+      "criterion_name": "ISO 9001 certification",
+      "decision": "PASS",
+      "confidence": 0.97,
+      "extracted_value": true,
+      "source_document": "compliance_declaration.pdf",
+      "rule_applied": "iso_9001_certificate is_true True",
+      "reasoning": "Extracted boolean value is True; required value is True.",
+      "flagged": false
+    },
+    {
+      "bidder_id": "bidder_newwave_analytics",
+      "bidder_name": "NewWave Analytics",
+      "criterion_id": "criterion_faaf11c139",
+      "criterion_name": "No blacklisting declaration",
+      "decision": "PASS",
+      "confidence": 0.97,
+      "extracted_value": false,
+      "source_document": "compliance_declaration.pdf",
+      "rule_applied": "blacklisted_status is_false False",
+      "reasoning": "Extracted boolean value is False; required value is False.",
+      "flagged": false
+    },
+    {
+      "bidder_id": "bidder_newwave_analytics",
+      "bidder_name": "NewWave Analytics",
+      "criterion_id": "criterion_a365b23a37",
+      "criterion_name": "Positive net worth",
+      "decision": "PASS",
+      "confidence": 0.97,
+      "extracted_value": true,
+      "source_document": "company_profile.pdf",
+      "rule_applied": "net_worth_positive is_true True",
+      "reasoning": "Extracted boolean value is True; required value is True.",
+      "flagged": false
+    },
+    {
+      "bidder_id": "bidder_rurallogic_innovations",
+      "bidder_name": "RuralLogic Innovations",
+      "criterion_id": "criterion_879a69616c",
+      "criterion_name": "Minimum years of experience",
+      "decision": "PASS",
+      "confidence": 0.97,
+      "extracted_value": 3.0,
+      "source_document": "company_profile.pdf",
+      "rule_applied": "years_experience >= 3.0",
+      "reasoning": "Extracted numeric value 3 satisfies rule >= 3.",
+      "flagged": false
+    },
+    {
+      "bidder_id": "bidder_rurallogic_innovations",
+      "bidder_name": "RuralLogic Innovations",
+      "criterion_id": "criterion_d3d8dedf0f",
+      "criterion_name": "Average annual turnover",
+      "decision": "PASS",
+      "confidence": 0.97,
+      "extracted_value": 52.0,
+      "source_document": "company_profile.pdf",
+      "rule_applied": "annual_turnover_lakhs >= 50.0",
+      "reasoning": "Extracted numeric value 52 satisfies rule >= 50.",
+      "flagged": false
+    },
+    {
+      "bidder_id": "bidder_rurallogic_innovations",
+      "bidder_name": "RuralLogic Innovations",
+      "criterion_id": "criterion_42c78c3974",
+      "criterion_name": "Similar project experience",
+      "decision": "PASS",
+      "confidence": 0.97,
+      "extracted_value": 2,
+      "source_document": "company_profile.pdf",
+      "rule_applied": "similar_projects_count >= 2.0",
+      "reasoning": "Extracted numeric value 2 satisfies rule >= 2.",
+      "flagged": false
+    },
+    {
+      "bidder_id": "bidder_rurallogic_innovations",
+      "bidder_name": "RuralLogic Innovations",
+      "criterion_id": "criterion_2cfc9cf941",
+      "criterion_name": "GST registration",
+      "decision": "NEEDS_REVIEW",
+      "confidence": 0.0,
+      "extracted_value": null,
+      "source_document": null,
+      "rule_applied": "gst_registration is_true True",
+      "reasoning": "No reliable extracted evidence was found. Human review is required before rejection. Ambiguity is flagged for human validation.",
+      "flagged": true
+    },
+    {
+      "bidder_id": "bidder_rurallogic_innovations",
+      "bidder_name": "RuralLogic Innovations",
+      "criterion_id": "criterion_98bc44de0c",
+      "criterion_name": "ISO 9001 certification",
+      "decision": "FAIL",
+      "confidence": 0.97,
+      "extracted_value": false,
+      "source_document": "declaration.pdf",
+      "rule_applied": "iso_9001_certificate is_true True",
+      "reasoning": "Extracted boolean value is False; required value is True.",
+      "flagged": false
+    },
+    {
+      "bidder_id": "bidder_rurallogic_innovations",
+      "bidder_name": "RuralLogic Innovations",
+      "criterion_id": "criterion_faaf11c139",
+      "criterion_name": "No blacklisting declaration",
+      "decision": "PASS",
+      "confidence": 0.97,
+      "extracted_value": false,
+      "source_document": "declaration.pdf",
+      "rule_applied": "blacklisted_status is_false False",
+      "reasoning": "Extracted boolean value is False; required value is False.",
+      "flagged": false
+    },
+    {
+      "bidder_id": "bidder_rurallogic_innovations",
+      "bidder_name": "RuralLogic Innovations",
+      "criterion_id": "criterion_a365b23a37",
+      "criterion_name": "Positive net worth",
+      "decision": "PASS",
+      "confidence": 0.97,
+      "extracted_value": true,
+      "source_document": "company_profile.pdf",
+      "rule_applied": "net_worth_positive is_true True",
+      "reasoning": "Extracted boolean value is True; required value is True.",
+      "flagged": false
+    }
+  ],
+  "matrix": [
+    {
+      "Bidder": "BharatTech Solutions",
+      "Minimum years of experience": "PASS",
+      "Average annual turnover": "PASS",
+      "Similar project experience": "PASS",
+      "GST registration": "PASS",
+      "ISO 9001 certification": "PASS",
+      "No blacklisting declaration": "PASS",
+      "Positive net worth": "PASS"
+    },
+    {
+      "Bidder": "NewWave Analytics",
+      "Minimum years of experience": "FAIL",
+      "Average annual turnover": "FAIL",
+      "Similar project experience": "PASS",
+      "GST registration": "PASS",
+      "ISO 9001 certification": "PASS",
+      "No blacklisting declaration": "PASS",
+      "Positive net worth": "PASS"
+    },
+    {
+      "Bidder": "RuralLogic Innovations",
+      "Minimum years of experience": "PASS",
+      "Average annual turnover": "PASS",
+      "Similar project experience": "PASS",
+      "GST registration": "NEEDS_REVIEW",
+      "ISO 9001 certification": "FAIL",
+      "No blacklisting declaration": "PASS",
+      "Positive net worth": "PASS"
+    }
+  ],
+  "summary": {
+    "BharatTech Solutions": {
+      "pass": 7,
+      "fail": 0,
+      "needs_review": 0,
+      "score_percent": 100.0,
+      "recommendation": "QUALIFIED"
+    },
+    "NewWave Analytics": {
+      "pass": 5,
+      "fail": 2,
+      "needs_review": 0,
+      "score_percent": 71.43,
+      "recommendation": "NOT_QUALIFIED"
+    },
+    "RuralLogic Innovations": {
+      "pass": 5,
+      "fail": 1,
+      "needs_review": 1,
+      "score_percent": 78.57,
+      "recommendation": "NOT_QUALIFIED"
+    }
+  },
+  "report_json_path": "C:\\Users\\Shivansh Karanwal\\Documents\\Codex\\2026-05-04\\hi-can-you-write-code-for\\data\\reports\\eval_25a6ef3f24.json",
+  "report_html_path": "C:\\Users\\Shivansh Karanwal\\Documents\\Codex\\2026-05-04\\hi-can-you-write-code-for\\data\\reports\\eval_25a6ef3f24.html"
+}

@@ -1,0 +1,7 @@
+Compliance Declaration
+GSTIN: 27ABCDE1234F1Z5
+ISO 9001 certification: valid
+ISO 9001 certificate valid until: 2027-03-31
+Blacklisted: no
+Data residency: within India
+Local language support: Hindi and regional language available

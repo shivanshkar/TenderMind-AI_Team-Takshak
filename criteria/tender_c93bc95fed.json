@@ -1,0 +1,214 @@
+[
+  {
+    "id": "criterion_c72e7fe143",
+    "name": "Minimum years of experience",
+    "description": "Bidder must have at least 3 years of relevant experience.",
+    "field_name": "years_experience",
+    "data_type": "number",
+    "operator": ">=",
+    "threshold": 3.0,
+    "unit": "years",
+    "mandatory": true,
+    "weight": 1.0,
+    "evidence_keywords": [
+      "experience",
+      "years"
+    ],
+    "source_excerpt": "citizen service analytics platform eligibility criteria mandatory criteria: 1. the bidder must have minimum 3 years of experience in ai, data analytics, or software implementation. 2. the bidder must have average annual turnover of inr 50"
+  },
+  {
+    "id": "criterion_21e6b56f78",
+    "name": "Average annual turnover",
+    "description": "Bidder must have average annual turnover of at least INR 50 lakh.",
+    "field_name": "annual_turnover_lakhs",
+    "data_type": "number",
+    "operator": ">=",
+    "threshold": 50.0,
+    "unit": "INR lakh",
+    "mandatory": true,
+    "weight": 1.0,
+    "evidence_keywords": [
+      "turnover",
+      "annual turnover"
+    ],
+    "source_excerpt": "minimum 3 years of experience in ai, data analytics, or software implementation. 2. the bidder must have average annual turnover of inr 50 lakh during the last three financial years. 3. the bidder must have completed at least 2 similar proj"
+  },
+  {
+    "id": "criterion_ffe446b797",
+    "name": "Similar project experience",
+    "description": "Bidder must have completed at least 2 similar projects.",
+    "field_name": "similar_projects_count",
+    "data_type": "number",
+    "operator": ">=",
+    "threshold": 2.0,
+    "unit": "projects",
+    "mandatory": true,
+    "weight": 1.0,
+    "evidence_keywords": [
+      "similar projects",
+      "completed projects"
+    ],
+    "source_excerpt": "rage annual turnover of inr 50 lakh during the last three financial years. 3. the bidder must have completed at least 2 similar projects for government, psu, or large enterprise clients. 4. the bidder must hold valid gst registration. 5. is"
+  },
+  {
+    "id": "criterion_4647a4cb1f",
+    "name": "GST registration",
+    "description": "Bidder must hold a valid GST registration.",
+    "field_name": "gst_registration",
+    "data_type": "boolean",
+    "operator": "is_true",
+    "threshold": true,
+    "unit": null,
+    "mandatory": true,
+    "weight": 1.0,
+    "evidence_keywords": [
+      "gst",
+      "gstin",
+      "registration"
+    ],
+    "source_excerpt": "e completed at least 2 similar projects for government, psu, or large enterprise clients. 4. the bidder must hold valid gst registration. 5. iso 9001 certification is required for quality management. 6. iso 9001 certificate valid until 2026"
+  },
+  {
+    "id": "criterion_04c5f04386",
+    "name": "ISO 9001 certification",
+    "description": "Bidder should provide a valid ISO 9001 quality certification.",
+    "field_name": "iso_9001_certificate",
+    "data_type": "boolean",
+    "operator": "is_true",
+    "threshold": true,
+    "unit": null,
+    "mandatory": true,
+    "weight": 1.0,
+    "evidence_keywords": [
+      "iso 9001",
+      "quality certification"
+    ],
+    "source_excerpt": "2 similar projects for government, psu, or large enterprise clients. 4. the bidder must hold valid gst registration. 5. iso 9001 certification is required for quality management. 6. iso 9001 certificate valid until 2026-12-31. 7. the bidder"
+  },
+  {
+    "id": "criterion_a3821a8411",
+    "name": "No blacklisting declaration",
+    "description": "Bidder must not be currently blacklisted by any government department.",
+    "field_name": "blacklisted_status",
+    "data_type": "boolean",
+    "operator": "is_false",
+    "threshold": false,
+    "unit": null,
+    "mandatory": true,
+    "weight": 1.0,
+    "evidence_keywords": [
+      "blacklisted",
+      "debarred"
+    ],
+    "source_excerpt": "ification is required for quality management. 6. iso 9001 certificate valid until 2026-12-31. 7. the bidder must not be blacklisted or debarred by any government department. 8. the bidder must have positive net worth as per latest audited f"
+  },
+  {
+    "id": "criterion_66c2dc0e9a",
+    "name": "Positive net worth",
+    "description": "Bidder must have positive net worth as per the latest audited financials.",
+    "field_name": "net_worth_positive",
+    "data_type": "boolean",
+    "operator": "is_true",
+    "threshold": true,
+    "unit": null,
+    "mandatory": true,
+    "weight": 1.0,
+    "evidence_keywords": [
+      "net worth",
+      "audited financials"
+    ],
+    "source_excerpt": "12-31. 7. the bidder must not be blacklisted or debarred by any government department. 8. the bidder must have positive net worth as per latest audited financial statements. 9. bid security valid until 2026-12-31. 10. data residency: bidder"
+  },
+  {
+    "id": "criterion_0ec3ccdb66",
+    "name": "ISO certificate validity date",
+    "description": "ISO 9001 certificate must be valid on or after 2026-12-31.",
+    "field_name": "iso_certificate_valid_until",
+    "data_type": "date",
+    "operator": "date_on_or_after",
+    "threshold": "2026-12-31",
+    "unit": null,
+    "mandatory": true,
+    "weight": 1.0,
+    "evidence_keywords": [
+      "iso 9001",
+      "valid until",
+      "certificate"
+    ],
+    "source_excerpt": "ients. 4. the bidder must hold valid gst registration. 5. iso 9001 certification is required for quality management. 6. iso 9001 certificate valid until 2026-12-31. 7. the bidder must not be blacklisted or debarred by any government departm"
+  },
+  {
+    "id": "criterion_ddb18798fb",
+    "name": "Bid security validity",
+    "description": "Bid security or EMD must be valid on or after 2026-12-31.",
+    "field_name": "bid_security_valid_until",
+    "data_type": "date",
+    "operator": "date_on_or_after",
+    "threshold": "2026-12-31",
+    "unit": null,
+    "mandatory": true,
+    "weight": 1.0,
+    "evidence_keywords": [
+      "bid security",
+      "emd",
+      "valid until"
+    ],
+    "source_excerpt": "by any government department. 8. the bidder must have positive net worth as per latest audited financial statements. 9. bid security valid until 2026-12-31. 10. data residency: bidder must host and process tender data within india. 11. tech"
+  },
+  {
+    "id": "criterion_d685cd8342",
+    "name": "India data residency",
+    "description": "Bidder must commit to hosting and processing tender data within India.",
+    "field_name": "data_residency_india",
+    "data_type": "boolean",
+    "operator": "is_true",
+    "threshold": true,
+    "unit": null,
+    "mandatory": true,
+    "weight": 1.0,
+    "evidence_keywords": [
+      "data residency",
+      "india",
+      "hosting"
+    ],
+    "source_excerpt": "er must have positive net worth as per latest audited financial statements. 9. bid security valid until 2026-12-31. 10. data residency: bidder must host and process tender data within india. 11. technical proposal must describe a cloud-nati"
+  },
+  {
+    "id": "criterion_78a846dae9",
+    "name": "Technical solution alignment",
+    "description": "Technical proposal must describe a cloud-native AI analytics platform with API integration, role-based access control, and audit reporting.",
+    "field_name": "technical_solution_description",
+    "data_type": "text",
+    "operator": "semantic",
+    "threshold": "cloud-native AI analytics platform API integration role-based access control audit reporting",
+    "unit": null,
+    "mandatory": true,
+    "weight": 1.0,
+    "evidence_keywords": [
+      "cloud-native",
+      "AI analytics",
+      "API integration",
+      "role-based access control",
+      "audit reporting"
+    ],
+    "source_excerpt": "9. bid security valid until 2026-12-31. 10. data residency: bidder must host and process tender data within india. 11. technical proposal must describe a cloud-native ai analytics platform with api integration, role-based access control, a"
+  },
+  {
+    "id": "criterion_299be4980d",
+    "name": "Local language support",
+    "description": "Optional: bidder may provide Hindi or regional language support for officer-facing workflows.",
+    "field_name": "local_language_support",
+    "data_type": "boolean",
+    "operator": "is_true",
+    "threshold": true,
+    "unit": null,
+    "mandatory": false,
+    "weight": 0.35,
+    "evidence_keywords": [
+      "local language",
+      "hindi",
+      "regional language"
+    ],
+    "source_excerpt": "alytics platform with api integration, role-based access control, and audit reporting. optional criteria: 12. optional: local language support in hindi or regional language is desirable for officer-facing workflows. submission requirements:"
+  }
+]

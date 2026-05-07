@@ -1,0 +1,122 @@
+[
+  {
+    "id": "criterion_bf3b069b61",
+    "name": "Minimum years of experience",
+    "description": "Bidder must have at least 3 years of relevant experience.",
+    "field_name": "years_experience",
+    "data_type": "number",
+    "operator": ">=",
+    "threshold": 3.0,
+    "unit": "years",
+    "mandatory": true,
+    "weight": 1.0,
+    "evidence_keywords": [
+      "experience",
+      "years"
+    ],
+    "source_excerpt": "t tender: ai-enabled citizen service analytics platform eligibility criteria 1. the bidder must have minimum 3 years of experience in ai, data analytics, or software implementation. 2. the bidder must have average annual turnover of inr 50"
+  },
+  {
+    "id": "criterion_fb6fbfd0ef",
+    "name": "Average annual turnover",
+    "description": "Bidder must have average annual turnover of at least INR 50 lakh.",
+    "field_name": "annual_turnover_lakhs",
+    "data_type": "number",
+    "operator": ">=",
+    "threshold": 50.0,
+    "unit": "INR lakh",
+    "mandatory": true,
+    "weight": 1.0,
+    "evidence_keywords": [
+      "turnover",
+      "annual turnover"
+    ],
+    "source_excerpt": "minimum 3 years of experience in ai, data analytics, or software implementation. 2. the bidder must have average annual turnover of inr 50 lakh during the last three financial years. 3. the bidder must have completed at least 2 similar proj"
+  },
+  {
+    "id": "criterion_f74328ba72",
+    "name": "Similar project experience",
+    "description": "Bidder must have completed at least 2 similar projects.",
+    "field_name": "similar_projects_count",
+    "data_type": "number",
+    "operator": ">=",
+    "threshold": 2.0,
+    "unit": "projects",
+    "mandatory": true,
+    "weight": 1.0,
+    "evidence_keywords": [
+      "similar projects",
+      "completed projects"
+    ],
+    "source_excerpt": "rage annual turnover of inr 50 lakh during the last three financial years. 3. the bidder must have completed at least 2 similar projects for government, psu, or large enterprise clients. 4. the bidder must hold valid gst registration. 5. is"
+  },
+  {
+    "id": "criterion_df4f07c0da",
+    "name": "GST registration",
+    "description": "Bidder must hold a valid GST registration.",
+    "field_name": "gst_registration",
+    "data_type": "boolean",
+    "operator": "is_true",
+    "threshold": true,
+    "unit": null,
+    "mandatory": true,
+    "weight": 1.0,
+    "evidence_keywords": [
+      "gst",
+      "gstin",
+      "registration"
+    ],
+    "source_excerpt": "e completed at least 2 similar projects for government, psu, or large enterprise clients. 4. the bidder must hold valid gst registration. 5. iso 9001 certification is required for quality management. 6. the bidder must not be blacklisted or"
+  },
+  {
+    "id": "criterion_9955334de4",
+    "name": "ISO 9001 certification",
+    "description": "Bidder should provide a valid ISO 9001 quality certification.",
+    "field_name": "iso_9001_certificate",
+    "data_type": "boolean",
+    "operator": "is_true",
+    "threshold": true,
+    "unit": null,
+    "mandatory": true,
+    "weight": 1.0,
+    "evidence_keywords": [
+      "iso 9001",
+      "quality certification"
+    ],
+    "source_excerpt": "2 similar projects for government, psu, or large enterprise clients. 4. the bidder must hold valid gst registration. 5. iso 9001 certification is required for quality management. 6. the bidder must not be blacklisted or debarred by any gove"
+  },
+  {
+    "id": "criterion_05a1a1cb7f",
+    "name": "No blacklisting declaration",
+    "description": "Bidder must not be currently blacklisted by any government department.",
+    "field_name": "blacklisted_status",
+    "data_type": "boolean",
+    "operator": "is_false",
+    "threshold": false,
+    "unit": null,
+    "mandatory": true,
+    "weight": 1.0,
+    "evidence_keywords": [
+      "blacklisted",
+      "debarred"
+    ],
+    "source_excerpt": "st hold valid gst registration. 5. iso 9001 certification is required for quality management. 6. the bidder must not be blacklisted or debarred by any government department. 7. the bidder must have positive net worth as per latest audited f"
+  },
+  {
+    "id": "criterion_7f4f896b8a",
+    "name": "Positive net worth",
+    "description": "Bidder must have positive net worth as per the latest audited financials.",
+    "field_name": "net_worth_positive",
+    "data_type": "boolean",
+    "operator": "is_true",
+    "threshold": true,
+    "unit": null,
+    "mandatory": true,
+    "weight": 1.0,
+    "evidence_keywords": [
+      "net worth",
+      "audited financials"
+    ],
+    "source_excerpt": "ement. 6. the bidder must not be blacklisted or debarred by any government department. 7. the bidder must have positive net worth as per latest audited financial statements."
+  }
+]
